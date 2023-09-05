@@ -1,0 +1,168 @@
+/*Estrutura global que estiliza o documento inteiro*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Estrutura que estiliza body da pagina*/
+body {
+    min-height: 100vh;
+    background: linear-gradient(#0d0d2c, #191936);
+    color: #fff;
+}
+
+/*Estrutura responsavel pelo posicionamento da header e navbar*/
+.header {
+    background: #0d0d2c;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/*Codigo que referencia a "logo"/nome da pagina*/
+.Nome {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 550;
+
+}
+
+/*Codigos de fonte, cor e margin da barra de navegação*/
+.navBar a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 450;
+    margin-left: 35px;
+}
+
+/*Codigos responsavel pelo hover event em cima de elementos da barra de navegacao*/
+.navBar a:hover {
+    border: 4px solid #fff;
+    background: #fff;
+    border-radius: 16px;
+    color: rgb(22, 15, 88);
+}
+
+/*Estrutura geral da pagina inicial*/
+.home {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 10%;
+}
+
+/*Estrutura geral de width da pagina de inicio*/
+.homeText {
+    max-width: 550px;
+}
+
+/*Codigos relacionados a fonte e formatacao das escritas h1 na pagina inicial*/
+.homeText h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/*Codigos relacionados a fonte e formatacao das escritas h4 na pagina inicial*/
+.homeText h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: aquamarine;
+    margin-top: 10px;
+}
+
+/*Codigos relacionados a fonte e formatacao das escritas p na pagina inicial*/
+.homeText p {
+    font-size: 15px;
+    margin: 14px 0 40px;
+}
+
+/*Estruturacao do botao saiba mais na pagina inicial*/
+.homeText .btn {
+    display: flex;
+    width: 345px;
+    height: 50px;
+}
+
+/*Codigos relacionados a fonte, formatacao, posicionamento, cor do botao*/
+.btn a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: aquamarine;
+    border: 1px solid aquamarine;
+    border-radius: 16px;
+    font-size: 18px;
+    color: #0d0d2c;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/*Codigos relacionados a animacao do botao*/
+.btn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(17, 17, 73);
+    z-index: -1;
+    transition: .2s;
+}
+
+/*Evento hover em cima do botao saiba mais, alterando sua cor*/
+.btn a:hover {
+    color: aquamarine;
+}
+
+/*mudanca de width ao ocorrer hover no botao saiba mais*/
+.btn a:hover::before {
+    width: 100%;
+}
+
+/*Estrutura global do resto das sections da pagina*/
+.structure {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 10%;
+}
+
+/*Estrutura global de texto das sections da pagina*/
+.structureText {
+    max-width: 550px;
+}
+
+/*Estrutura global de texto h1 das sections da pagina*/
+.structureText h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*Estrutura global de itens de lista li das sections da pagina*/
+.structureText li {
+    font-size: 15px;
+    margin: 14px 0 40px;
+}
+
+/*Estrutura global de texto p das sections da pagina*/
+.structureText p {
+    font-size: 15px;
+    margin: 14px 0 40px;
+}
